@@ -2471,10 +2471,13 @@ gcc list_dir_details.c -o list_dir_details
 
 <h4>Command:</h4>
 <pre>
-curl -X POST -H "Content-Type: application/json" \
--d '{"contents":[{"parts":[{"text":"Write a simple code in C for sjf alogorithm in os, also include algorithm(bullet points text simple) and how to run the code. keep things simple and dont include comment lines in between the code"}]}]}' \
-"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyDk2o8-aoxmeK0T7kfyS8yU3j_bIfgNxgk" \
-| grep -o '"text": *"[^"]*"' | sed 's/"text": *"//' | sed 's/"$//' | sed 's/\\n/\n/g'
+curl -X POST -H "Content-Type: application/json" -d '{"contents":[{"parts":[{"text":"Write a simple code in C for sjf alogorithm in os, also include algorithm(bullet points text simple) and how to run the code. keep things simple and dont include comment lines in between the code"}]}]}' "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyDk2o8-aoxmeK0T7kfyS8yU3j_bIfgNxgk" | grep -o '"text": *"[^"]*"' | sed 's/"text": *"//' | sed 's/"$//' | sed 's/\\n/\n/g'
+</pre>
+
+<pre>
+AIzaSyDXaoog9Yyjg0QEQuzIURwPQarxk_SKEV4
+
+AIzaSyDHpHEhUDMuCtqs3GwnH4choc5zR_B9Mvg
 </pre>
 
 <hr>
